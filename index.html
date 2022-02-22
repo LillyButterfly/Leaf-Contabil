@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <title>Leaf Contábil</title>
+</head>
+
+<body>
+    <div class="superior-box">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Leaf Contabil</h2>
+            <a href="#bottom-tittle" class="link-cabecalho">Quem Somos</a>
+            <a href="#middle-tittle" class="link-cabecalho">Serviços</a>
+            <a class="link-cabecalho" onclick="formscreen()">Contato</a>
+        </div>
+
+        <h1>Leaf Contábil</h1>
+
+
+        <form id="form-contact" action="https://formsubmit.co/ingridcruzsantos55@gmail.com" method="POST">
+            <h3 class="titulo-form">Entre em Contato</h3>
+
+            <label>
+                Nome
+                <input type="text" name="Nome" placeholder="Digite seu nome completo" required />
+            </label>
+
+            <label>
+                E-mail
+                <input type="email" name="E-mail" placeholder="Digite seu E-mail" required />
+            </label>
+
+            <label>
+                WhattsApp
+                <input type="tel" name="Telefone" placeholder="Digite seu Telefone" required />
+            </label>
+
+            <label>
+                Fale Conosco
+                <textarea type="text" name="info" placeholder="Qual a sua Dúvida?"></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+    <h2 id="middle-tittle">Nossos Serviços</h2>
+
+    <div class="all-cards">
+
+        <div class="card-box">
+            <h3 class="card-tittle">Contabilidade</h3>
+
+            <ul>
+                <li>Classificação e lançamentos contabilísticos;</li>
+                <li>Apuramento de impostos (IVA, IRPS, IRPC);</li>
+                <li>Reconciliação de contas;</li>
+                <li>Fornecimento de Balancetes mensais;</li>
+                <li>Mapas de Demonstração de Resultados mensais;</li>
+            </ul>
+
+        </div>
+
+        <div class="card-box">
+            <h3 class="card-tittle">Consultoria</h3>
+
+            <ul>
+                <li>Transação e Reestruturação;</li>
+                <li>Gestão Financeira;</li>
+                <li>Jurídica;</li>
+                <li>Trabalhista;</li>
+                <li>Planejamento Tributário;</li>
+            </ul>
+        </div>
+
+        <div class="card-box">
+            <h3 class="card-tittle">Auditoria</h3>
+            <ul>
+                <li>Auditorias demandadas por entidades regulatórias;</li>
+                <li>Auditoria para o terceiro setor (Fundações, Associações, ONGs);</li>
+                <li>Auditoria e revisão de relatórios contábeis, financeiros;</li>
+                <li>Diagnósticos e auditorias das práticas contábil, tributária, trabalhista, previdenciária e
+                    financeira;</li>
+                <li>Revisão e auditoria de processos de controles internos;</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bottom-box">
+        <h2 id="bottom-tittle">Sobre Nós</h2>
+
+        <p class="paragraph-one">Somos uma empresa de serviços de contabilidade há mais de 10 anos no mercado,
+            constituída por
+            profissionais
+            com larga experiência nas áreas de gestão empresarial.
+            Em nosso contexto, o cliente é a figura mais importante. Assim, nos colocamos à sua disposição para
+            ajudá-lo
+            a ter sucesso neste mundo globalizado e altamente competitivo.</p>
+
+        <p class="paragraph-two">Nossa Missão: Fornecer serviços contábeis e assessoramento aos nossos clientes, para
+            que ultipliquem seus
+            resultados e tenham uma boa visão de organização, pois sabemos que o empresário necessita ter
+            tranquilidade
+            para poder tomar decisões. Por esse motivo trabalhamos todos os dias para fornecer confiança, assessoria
+            e
+            tranquilidade.</p>
+
+        <p class="paragraph-three">Temos Profissionais de qualidade prestando serviços para você!</p>
+
+    </div>
+
+</body>
+
+<script>
+    let formulario = document.getElementById("form-contact")
+
+    function formscreen(){
+        formulario.className = "mostrar-formulario"
+    }
+</script>
+
+</html>
